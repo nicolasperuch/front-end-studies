@@ -1,0 +1,4 @@
+1 - start project -> npm init
+2 - install plugins -> example : npm install grunt-contrib-jshint --save-dev
+3 - install plugins -> npm install 
+4 - use plugins via cli - example: grunt jshint
