@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Vue</title>
+  </head>
+  <body>
+      
+    
+      <div id="app">
+          <h1>{{title}}</h1>
+          <input text="text" v-model="dragonName" v-on:keyup.enter="addToDragons()">
+          <div>
+              <label v-text="dragonsMessage"></label>
+          </div>
+          <ul>
+            <li v-for="dragon in dragons">{{dragon.name}}</li>
+          </ul>
+
+      </div>
+      
+      
+      
+      <script src="https://unpkg.com/vue"></script>
+      <script>
+          new Vue({
+            el: '#app',
+            data: {
+              title: 'Dragons',
+              dragonName: '',
+              dragonsMessage: 'List of dragons',
+              dragons: [{ name: 'Quun' }]
+
+            },
+            methods: {
+              addToDragons() {
+                this.dragons.push({ name: this.dragonName })
+                this.dragonName = ''
+              }
+
+            }
+          })
+      </script>
+  </body>
+</html>
