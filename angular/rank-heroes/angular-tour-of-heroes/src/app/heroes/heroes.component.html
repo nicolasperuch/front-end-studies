@@ -1,0 +1,26 @@
+<div>
+  <div class="center">
+    <app-hero-detail [hero]="selectedHero"></app-hero-detail>
+    <!--ul class="heroes center">
+      <li *ngFor="let hero of heroes" (click)="onSelect(hero)">
+          <div class="margin" id="divName"> 
+              <span>{{hero.name}}</span>
+            </div>
+            <div class="margin" id="divHistory"> 
+              <span>{{hero.history}}</span>
+            </div>
+            <div class="margin" id="divPicture">
+                <img width="300" src="{{hero.image}}">
+            </div>
+      </li>
+    </ul-->
+
+    <ul class="heroes">
+        <li *ngFor="let hero of heroes">
+          <a routerLink="/detail/{{hero.id}}">
+            <span class="badge">{{hero.id}}</span> {{hero.name}}
+          </a>
+        </li>
+    </ul>
+  </div>
+</div>
