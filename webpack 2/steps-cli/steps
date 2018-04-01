@@ -1,7 +1,0 @@
-1 -> npm init
-2 -> npm install --save-dev webpack
-3 -> npm install --save lodash
-4 -> npx webpack src/index.js dist/bundle.js
-
-5 -> using configfile -> npx webpack --config webpack.config.js
-6 -> adding scripts build on package.json -> npm run build
