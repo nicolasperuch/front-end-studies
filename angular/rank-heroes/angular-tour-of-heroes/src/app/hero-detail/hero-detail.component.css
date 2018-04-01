@@ -1,0 +1,91 @@
+h1 { 
+    color: #b48608; 
+    font-family: 'Droid serif', serif; 
+    font-size: 36px; 
+    font-weight: 400; 
+    font-style: italic; 
+    line-height: 44px; 
+    margin: 0 0 12px; 
+    text-align: center;
+}
+
+.go-back-button{
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.container {
+    display: flex;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.margin{
+    margin-top: 15px;
+    margin-left: 50px;
+}
+
+.text-status-style{
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.margin-top-left-50{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.image-style{
+    border-radius: 20px;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #b48608; 
+    color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00ab';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .margin-left-10-top-15{
+    margin-left: 10px; margin-top: 15px;
+  }
+
+  .padding-10{
+      padding: 10px;
+  }
